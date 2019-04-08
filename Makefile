@@ -7,7 +7,9 @@ sum.s:sum.i
 sum.i:sum.c
 	gcc -E sum.c -o sum.i
 
-
+.PHONY:clean
+clean:
+	rm -f sum.i sum.s sum.o sum
 
 
 
